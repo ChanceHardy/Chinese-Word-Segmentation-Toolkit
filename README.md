@@ -26,6 +26,9 @@ Decoding: A vectorized CRF layer with Viterbi algorithm to find the optimal tag 
 
 
 📊 Performance (F1-Score)
+
 Model	Precision	Recall	F1-Score
+
 BiLSTM-CRF	0.9561	0.9551	0.9556
+
 IDCNN-CRF	0.9218	0.9291	0.9254
