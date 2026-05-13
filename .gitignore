@@ -1,0 +1,38 @@
+# --- 个人隐私与作业信息 ---
+# 排除带有学号和姓名的预测结果文件
+*_*_pred.txt
+# 排除实验报告（因为里面有你的姓名、学号，建议脱敏后再手动上传或不上传）
+实验报告.pdf
+
+# --- 模型权重与大文件 (重点) ---
+# PyTorch 模型权重文件通常很大，不建议上传到 GitHub 仓库
+*.pth
+# 视频演示文件通常很大，建议通过链接分享而非直接上传
+*.mp4
+
+# --- 数据集与中间文件 ---
+# 训练数据集（如果是公开语料库，建议在 README 中提供下载链接）
+pku_training.utf8
+# 原始文本或临时测试文本
+raw.txt
+# 序列化后的词表文件（虽然较小，但通常随模型生成，可不上传）
+*.pkl
+
+# --- Python 标准环境排除 ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.vscode/
+.idea/
+
+# --- 操作系统临时文件 ---
+.DS_Store
+Thumbs.db
