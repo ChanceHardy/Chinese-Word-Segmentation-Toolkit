@@ -5,16 +5,23 @@ A high-performance Chinese Word Segmentation (CWS) system built with PyTorch. It
 
 🌟 Highlights
 Manual CRF Layer: The Conditional Random Field (CRF) is implemented from scratch with tensor vectorization, achieving a 10x training speedup compared to standard loops.
+
 Dual Encoders: Supports both BiLSTM (for context accuracy) and IDCNN (for parallel efficiency).
+
 PKU Dataset: Trained and evaluated on the SIGHAN 2005 PKU corpus.
 
 
 🛠 Technical Route
 Preprocessing: Converts text to BMES (Begin, Middle, End, Single) labels.
+
 Embedding: Maps characters to 128-dimensional dense vectors.
+
 Encoding:
+
 BiLSTM: Captures long-range dependencies.
+
 IDCNN: Uses dilated convolutions for fast, parallel feature extraction.
+
 Decoding: A vectorized CRF layer with Viterbi algorithm to find the optimal tag sequence.
 
 
